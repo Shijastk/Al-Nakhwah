@@ -2,6 +2,8 @@ import HeroSection from "@/components/HeroSection";
 import TrustedBrandsSection from "@/components/TrustedBrandsSection";
 import Navbar from "@/components/Navbar";
 import AboutSection from "@/components/AboutSection";
+import ProductsSection from "@/components/ProductsSection";
+import ProductGallerySection from "@/components/ProductGallerySection";
 import SuppliersSection from "@/components/SuppliersSection";
 import FeaturesSection from "@/components/FeaturesSection";
 import GlobalNetworkSection from "@/components/GlobalNetworkSection";
@@ -19,6 +21,8 @@ export default function Home() {
       <Navbar />
       <HeroSection />
       <ScrollReveal><AboutSection /></ScrollReveal>
+      {/* <ScrollReveal><ProductsSection /></ScrollReveal> */}
+      {/* <ScrollReveal><ProductGallerySection /></ScrollReveal> */}
       <ScrollReveal><TrustedBrandsSection /></ScrollReveal>
       <ScrollReveal><SuppliersSection /></ScrollReveal>
       <ScrollReveal><FeaturesSection /></ScrollReveal>

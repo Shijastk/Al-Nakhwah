@@ -5,6 +5,8 @@ import imgVegetables from "../assets/fresh_vegetables.jpg";
 import imgSeafood from "../assets/seafood.jpg";
 import imgBread from "../assets/bread1.jpg";
 import imgGrains from "../assets/grains_rice.jpg";
+import fruites from "../assets/fresh_fruits.jpg";
+import Rice from "../assets/alnakhwah_rice_1787401071718.jpg";
 
 const categories = [
   {
@@ -30,12 +32,12 @@ const categories = [
   {
     title: "Dairy & Farm Fresh",
     description: "Farm-fresh milk, artisan cheeses, and high-quality eggs from trusted local producers.",
-    image: imgBread, // Using placeholder until user uploads a real image
+    image: Rice, // Using placeholder until user uploads a real image
   },
   {
     title: "Beverages & Drinks",
     description: "A wide selection of cold-pressed juices, soft drinks, and premium roast coffees.",
-    image: imgVegetables, // Using placeholder
+    image: fruites, // Using placeholder
   }
 ];
 
@@ -77,7 +79,7 @@ export default function SuppliersSection() {
   const trackIndex = Math.min(activeIndex, maxIndex);
 
   return (
-    <section className="w-full bg-[#064E3B] text-white py-24 px-6 md:px-[5%] overflow-hidden">
+    <section id="products" className="w-full bg-[#064E3B] text-white py-24 px-6 md:px-[5%] overflow-hidden">
       <style dangerouslySetInnerHTML={{__html: `
         .carousel-track {
           --translate-x: calc(-${trackIndex} * (85% + 1rem));

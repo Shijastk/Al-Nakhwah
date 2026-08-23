@@ -53,7 +53,10 @@ export default function CtaSection() {
                 </svg>
               </button>
               
-              <button className="bg-transparent hover:bg-gray-50 text-[#064E3B] border border-gray-200 font-bold py-4 px-8 rounded-xl transition-colors duration-300 flex items-center justify-center w-full sm:w-auto">
+              <button 
+                onClick={() => document.getElementById('products')?.scrollIntoView({ behavior: 'smooth' })}
+                className="bg-transparent hover:bg-gray-50 text-[#064E3B] border border-gray-200 font-bold py-4 px-8 rounded-xl transition-colors duration-300 flex items-center justify-center w-full sm:w-auto"
+              >
                 View Catalog
               </button>
             </div>

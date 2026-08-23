@@ -57,19 +57,26 @@ export default function Navbar() {
         {/* Desktop Navigation */}
         <div className="hidden lg:flex gap-8 text-[15px] font-medium items-center ml-auto mr-8">
           {navLinks.map((link) => (
-            <Link 
+            <button 
               key={link.label} 
-              href={link.href} 
-              className="hover:opacity-80 transition-opacity whitespace-nowrap"
+              onClick={(e) => {
+                e.preventDefault();
+                if (link.href === "#") {
+                  window.scrollTo({ top: 0, behavior: "smooth" });
+                } else {
+                  document.querySelector(link.href)?.scrollIntoView({ behavior: 'smooth' });
+                }
+              }}
+              className="hover:opacity-80 transition-opacity whitespace-nowrap cursor-pointer"
             >
               {link.label}
-            </Link>
+            </button>
           ))}
         </div>
         
         {/* Desktop CTA */}
         <div className="hidden lg:flex items-center gap-6">
-          <Button variant="neon" className="py-3 px-8 text-[15px] font-bold whitespace-nowrap shadow-md hover:-translate-y-0.5 transition-transform flex items-center gap-2" onClick={() => window.location.href = "tel:0097333075524"}>
+          <Button variant="neon" className="py-3 px-8 text-[15px] font-bold whitespace-nowrap shadow-md hover:-translate-y-0.5 transition-transform flex items-center gap-2" onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}>
            Contact Us
            <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
           </Button>
@@ -90,18 +97,25 @@ export default function Navbar() {
         <div className="lg:hidden absolute top-full left-0 w-full bg-white border-b border-gray-100 flex flex-col p-6 shadow-2xl">
           <div className="flex flex-col gap-6 text-[16px] font-medium text-[#064E3B]">
             {navLinks.map((link) => (
-              <Link 
+              <button 
                 key={link.label} 
-                href={link.href} 
-                className="hover:opacity-80 transition-opacity"
-                onClick={() => setIsOpen(false)}
+                onClick={(e) => {
+                  e.preventDefault();
+                  setIsOpen(false);
+                  if (link.href === "#") {
+                    window.scrollTo({ top: 0, behavior: "smooth" });
+                  } else {
+                    document.querySelector(link.href)?.scrollIntoView({ behavior: 'smooth' });
+                  }
+                }}
+                className="hover:opacity-80 transition-opacity text-left cursor-pointer"
               >
                 {link.label}
-              </Link>
+              </button>
             ))}
             
             <div className="w-full h-[1px] bg-gray-100 my-2"></div>
-            <Button variant="neon" className="w-full py-3.5 text-[16px] font-bold mt-2 flex justify-center items-center gap-2" onClick={() => window.location.href = "tel:0097333075524"}>
+            <Button variant="neon" className="w-full py-3.5 text-[16px] font-bold mt-2 flex justify-center items-center gap-2" onClick={() => { setIsOpen(false); document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' }); }}>
               Contact Us
               <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
             </Button>
