@@ -4,7 +4,7 @@ import fs from 'fs';
 import path from 'path';
 
 export default function TrustedBrandsSection() {
-  let brands = [];
+  let brands: { name: string; src: string }[] = [];
   try {
     const brandsDir = path.join(process.cwd(), 'public/brands');
     if (fs.existsSync(brandsDir)) {

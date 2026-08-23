@@ -99,7 +99,6 @@ export default function LogisticsSection() {
             <div className="absolute inset-0 bg-[#16A34A]/40 blur-[80px] rounded-full z-0"></div>
             <div className="relative z-10 w-full aspect-[3/4] md:aspect-[4/5] max-w-[380px] mx-auto rounded-[2.5rem] overflow-hidden shadow-[0_0_40px_rgba(37,99,235,0.3)] border border-white/10 bg-slate-800">
               <motion.div 
-                style={{ y, scale: 1.15 }}
                 className="w-full h-full bg-cover bg-center opacity-80"
                 style={{ backgroundImage: `url(${imgShipping.src})`, y, scale: 1.15 }}
               />
