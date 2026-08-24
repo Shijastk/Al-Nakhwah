@@ -19,7 +19,7 @@ export default function AboutSection() {
           style={{ y: yBg }}
           className="text-[120px] sm:text-[180px] md:text-[250px] font-extrabold tracking-tighter whitespace-nowrap"
         >
-          ALNKWAH
+          Al Nakhwah
         </motion.h2>
       </div>
 
@@ -90,7 +90,7 @@ export default function AboutSection() {
               {/* Decorative Quote Mark */}
               <span className="absolute -top-6 -left-4 text-6xl text-gray-200 font-serif leading-none select-none z-0">"</span>
               <p className="text-gray-600 text-lg md:text-xl leading-relaxed relative z-10 italic font-light">
-                For over two decades, Alnkwah has bridged the gap between premium global producers and local markets. We believe that uncompromising quality and seamless logistics are the foundation of every successful kitchen.
+                For over two decades, Al Nakhwah has bridged the gap between premium global producers and local markets. We believe that uncompromising quality and seamless logistics are the foundation of every successful kitchen.
               </p>
             </motion.div>
 
