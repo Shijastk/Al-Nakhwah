@@ -8,7 +8,7 @@ export default function Footer() {
 
           {/* Brand Column */}
           <div className="lg:col-span-1">
-            <h3 className="text-3xl font-black tracking-tight mb-4 text-white">Alnkwah<span className="text-[#16A34A]">.</span></h3>
+            <h3 className="text-3xl font-black tracking-tight mb-4 text-white">Al Nakhwah<span className="text-[#16A34A]">.</span></h3>
             <p className="text-gray-400 text-sm leading-relaxed mb-6">
               Global sourcing, local expertise. Your premier wholesale partner for high-quality foodstuff, delivered on time.
             </p>
@@ -68,7 +68,7 @@ export default function Footer() {
         {/* Bottom */}
         <div className="border-t border-slate-800 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
           <p className="text-gray-500 text-sm">
-            &copy; {new Date().getFullYear()} Alnkwah Foodstuff. All rights reserved.
+            &copy; {new Date().getFullYear()} Al Nakhwah Foodstuff. All rights reserved.
           </p>
           <div className="flex gap-6">
             <a href="#" className="text-gray-500 hover:text-white text-sm transition-colors">Privacy Policy</a>
