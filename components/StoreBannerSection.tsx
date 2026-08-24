@@ -32,7 +32,7 @@ export default function StoreBannerSection() {
             Source Their Products.
           </h2>
           <p className="text-gray-400 text-[15px] max-w-2xl mx-auto font-light leading-relaxed">
-            Alnkwah connects global producers with local businesses, streamlining sourcing, logistics, and wholesale supply.
+            Al Nakhwah connects global producers with local businesses, streamlining sourcing, logistics, and wholesale supply.
           </p>
         </div>
 
