@@ -29,11 +29,11 @@ export default function ContactSection() {
             <div className="flex flex-col gap-6">
               <div className="flex flex-col">
                 <strong className="text-sm uppercase tracking-[0.2em] text-white/80 mb-2">Global Headquarters</strong>
-                <span className="text-3xl md:text-4xl font-light tracking-tight">Dubai, <strong className="font-bold">UAE</strong></span>
+                <span className="text-3xl md:text-4xl font-light tracking-tight">Southern Governorate, <strong className="font-bold">Bahrain</strong></span>
               </div>
               <div className="flex flex-col">
                 <strong className="text-sm uppercase tracking-[0.2em] text-white/80 mb-2">Dedicated Support</strong>
-                <span className="text-2xl md:text-3xl font-light tracking-tight">24/7 <strong className="font-bold">Availability</strong></span>
+                <span className="text-2xl md:text-3xl font-light tracking-tight">Call <strong className="font-bold">0097333075524</strong></span>
               </div>
             </div>
           </div>
