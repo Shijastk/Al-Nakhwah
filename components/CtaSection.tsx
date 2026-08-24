@@ -42,7 +42,7 @@ export default function CtaSection() {
             </h2>
             
             <p className="text-gray-600 text-lg leading-relaxed mb-10 max-w-lg">
-              Join thousands of restaurants, retailers, and distributors worldwide that rely on Alnkwah for premium quality, competitive pricing, and uninterrupted wholesale distribution.
+              Join thousands of restaurants, retailers, and distributors worldwide that rely on Al Nakhwah for premium quality, competitive pricing, and uninterrupted wholesale distribution.
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4">
