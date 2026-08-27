@@ -8,37 +8,37 @@ export default function StoreBannerSection() {
   return (
     <section className="relative w-full py-24 md:py-32 flex items-center justify-center overflow-hidden bg-black">
       {/* Background Image */}
-      <div 
+      <div
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
         style={{ backgroundImage: `url(${imgStore.src})` }}
       ></div>
-      
+
       {/* Very Dark Overlay (matching the image) */}
       <div className="absolute inset-0 bg-black/80"></div>
 
       {/* Content Container */}
-      <motion.div 
+      <motion.div
         initial={{ opacity: 0, y: 30 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true, margin: "-100px" }}
         transition={{ duration: 0.7 }}
         className="relative z-10 w-full max-w-[1200px] mx-auto px-6 flex flex-col items-center text-center"
       >
-        
+
         {/* Header Text */}
         <div className="mb-20">
           <h2 className="text-3xl md:text-[40px] font-light text-white mb-6 tracking-tight leading-tight">
-            Where Top <strong className="font-bold">Fresh Food Wholesalers</strong><br/>
+            Where Top <strong className="font-bold">Fresh Food Wholesalers</strong><br />
             Source Their Products.
           </h2>
           <p className="text-gray-400 text-[15px] max-w-2xl mx-auto font-light leading-relaxed">
-            Al Nakhwah connects global producers with local businesses, streamlining sourcing, logistics, and wholesale supply.
+            Al Nakhwah.LLC connects global producers with local businesses, streamlining sourcing, logistics, and wholesale supply.
           </p>
         </div>
 
         {/* 3-Column Stats Grid */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-12 md:gap-8 w-full max-w-5xl mx-auto">
-          
+
           {/* Stat 1 */}
           <div className="flex flex-col items-center">
             {/* Hand & Coin Icon */}

@@ -36,11 +36,11 @@ export default function FeaturesSection() {
           <div className="flex flex-col gap-8 pr-0 lg:pr-10">
             <div>
               <h2 className="text-4xl md:text-5xl font-normal leading-tight mb-6 tracking-tight whitespace-nowrap">
-                Why Al Nakhwah? The <strong className="font-bold">Ultimate</strong><br />
+                Why Al Nakhwah.LLC? The <strong className="font-bold">Ultimate</strong><br />
                 <strong className="font-bold">Wholesale</strong> Partner
               </h2>
               <p className="text-gray-600 text-lg leading-relaxed max-w-xl">
-                We are not just a supplier; we are an extension of your business. Al Nakhwah is built to handle the rigorous demands of the global fresh food industry.
+                We are not just a supplier; we are an extension of your business. Al Nakhwah.LLC is built to handle the rigorous demands of the global fresh food industry.
               </p>
             </div>
 
@@ -160,7 +160,7 @@ export default function FeaturesSection() {
           <div className="w-full relative overflow-hidden">
             <div className="flex overflow-x-auto snap-x snap-mandatory gap-4 pb-4 pr-[15%] [&::-webkit-scrollbar]:hidden [-ms-overflow-style:none] [scrollbar-width:none]">
               {products.map((product, index) => (
-                <motion.div 
+                <motion.div
                   key={index}
                   initial={{ opacity: 0, x: 20 }}
                   whileInView={{ opacity: 1, x: 0 }}
@@ -169,7 +169,7 @@ export default function FeaturesSection() {
                   className="snap-start shrink-0 w-[240px] group relative rounded-[20px] overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 border border-gray-100 cursor-pointer"
                 >
                   <div className="aspect-[4/5] w-full overflow-hidden bg-gray-50 relative">
-                    <div 
+                    <div
                       className="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-110"
                       style={{ backgroundImage: `url(${product.image.src})` }}
                     />

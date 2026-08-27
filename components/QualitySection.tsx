@@ -13,10 +13,10 @@ const certifications = [
 export default function QualitySection() {
   return (
     <section id="quality" className="relative w-full bg-[#FFF7ED] py-20 px-6 md:px-[5%] overflow-hidden font-sans border-y border-orange-100">
-      
+
       <div className="relative z-10 max-w-[1200px] mx-auto flex flex-col items-center text-center">
-        
-        <motion.div 
+
+        <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
@@ -28,21 +28,21 @@ export default function QualitySection() {
             <span className="text-orange-600 font-bold tracking-[0.2em] text-xs uppercase">Quality Assurance</span>
             <span className="w-8 h-[2px] bg-orange-400"></span>
           </div>
-          
+
           <h2 className="text-3xl md:text-5xl font-light leading-tight tracking-tight text-[#064E3B] mb-6">
             Uncompromising <strong className="font-bold">Quality Standards.</strong>
           </h2>
-          
+
           <p className="text-gray-600 text-lg leading-relaxed font-light">
-            Every product that carries the Al Nakhwah name undergoes rigorous quality control — from source verification and lab testing to packaging inspection and cold chain monitoring.
+            Every product that carries the Al Nakhwah.LLC name undergoes rigorous quality control — from source verification and lab testing to packaging inspection and cold chain monitoring.
           </p>
         </motion.div>
 
         {/* Horizontally Aligned Logos */}
         <div className="w-full flex flex-wrap justify-center gap-8 md:gap-12 lg:gap-20">
           {certifications.map((cert, index) => (
-            <motion.div 
-              key={index} 
+            <motion.div
+              key={index}
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}

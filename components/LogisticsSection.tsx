@@ -15,15 +15,15 @@ export default function LogisticsSection() {
 
   return (
     <section ref={ref} id="logistics" className="relative w-full bg-[#064E3B] py-24 md:py-32 font-sans overflow-hidden border-t border-slate-800">
-      
+
       {/* Background Glows */}
       <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-[#16A34A]/20 rounded-full blur-[150px] pointer-events-none transform translate-x-1/3 -translate-y-1/3"></div>
-      
+
       <div className="relative z-10 max-w-[1400px] mx-auto px-6">
-        
+
         {/* Header Content */}
         <div className="text-center max-w-3xl mx-auto mb-20 md:mb-28">
-          <motion.div 
+          <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
@@ -33,7 +33,7 @@ export default function LogisticsSection() {
             <span className="w-2 h-2 rounded-full bg-[#3B82F6] shadow-[0_0_8px_rgba(59,130,246,0.8)] animate-pulse"></span>
             <span className="text-blue-300 text-[13px] font-bold tracking-wide uppercase">Global Logistics</span>
           </motion.div>
-          <motion.h2 
+          <motion.h2
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
@@ -43,23 +43,23 @@ export default function LogisticsSection() {
             Your Supply Chain,<br />
             <strong className="font-bold text-[#16A34A]">Simplified</strong>
           </motion.h2>
-          <motion.p 
+          <motion.p
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6, delay: 0.2 }}
             className="text-gray-400 text-lg md:text-xl leading-relaxed font-light"
           >
-            Al Nakhwah handles the complexities of international food trade so you don't have to. We manage every step of the logistics chain, ensuring your orders arrive fresh and on time.
+            Al Nakhwah.LLC handles the complexities of international food trade so you don't have to. We manage every step of the logistics chain, ensuring your orders arrive fresh and on time.
           </motion.p>
         </div>
 
         {/* Main Content Layout */}
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-center">
-          
+
           {/* Left Column Features */}
           <div className="lg:col-span-4 flex flex-col gap-8 lg:text-right order-2 lg:order-1 pr-0 lg:pr-8">
-            <motion.div 
+            <motion.div
               initial={{ opacity: 0, x: -30 }}
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
@@ -75,8 +75,8 @@ export default function LogisticsSection() {
                 Climate-monitored warehousing and transport that preserves product freshness and quality from receipt to dispatch.
               </p>
             </motion.div>
-            
-            <motion.div 
+
+            <motion.div
               initial={{ opacity: 0, x: -30 }}
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
@@ -98,7 +98,7 @@ export default function LogisticsSection() {
           <div className="lg:col-span-4 order-1 lg:order-2 flex justify-center w-full px-4 sm:px-10 lg:px-0 relative">
             <div className="absolute inset-0 bg-[#16A34A]/40 blur-[80px] rounded-full z-0"></div>
             <div className="relative z-10 w-full aspect-[3/4] md:aspect-[4/5] max-w-[380px] mx-auto rounded-[2.5rem] overflow-hidden shadow-[0_0_40px_rgba(37,99,235,0.3)] border border-white/10 bg-slate-800">
-              <motion.div 
+              <motion.div
                 className="w-full h-full bg-cover bg-center opacity-80"
                 style={{ backgroundImage: `url(${imgShipping.src})`, y, scale: 1.15 }}
               />
@@ -108,7 +108,7 @@ export default function LogisticsSection() {
 
           {/* Right Column Features */}
           <div className="lg:col-span-4 flex flex-col gap-8 order-3 lg:order-3 pl-0 lg:pl-8">
-            <motion.div 
+            <motion.div
               initial={{ opacity: 0, x: 30 }}
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
@@ -123,8 +123,8 @@ export default function LogisticsSection() {
                 We orchestrate sea, air, and land freight solutions across major global trade routes, optimized for cost and speed.
               </p>
             </motion.div>
-            
-            <motion.div 
+
+            <motion.div
               initial={{ opacity: 0, x: 30 }}
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}

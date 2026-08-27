@@ -5,12 +5,12 @@ import { motion } from "framer-motion";
 
 const testimonials = [
   {
-    quote: "Al Nakhwah has completely transformed our supply chain. Their cold-chain logistics ensure our seafood arrives in immaculate condition every single time.",
+    quote: "Al Nakhwah.LLC has completely transformed our supply chain. Their cold-chain logistics ensure our seafood arrives in immaculate condition every single time.",
     name: "Chef Marcus Lin",
     role: "Executive Chef, The Grand Hotel",
   },
   {
-    quote: "Finding a supplier who can handle our massive bulk orders without compromising on quality was a challenge until we partnered with Al Nakhwah. Truly exceptional service.",
+    quote: "Finding a supplier who can handle our massive bulk orders without compromising on quality was a challenge until we partnered with Al Nakhwah.LLC. Truly exceptional service.",
     name: "Sarah Jenkins",
     role: "Purchasing Director, Global Foods Ltd.",
   },
@@ -36,7 +36,7 @@ export default function TestimonialSection() {
   return (
     <section className="w-full bg-[#F8FAFC] py-24 px-6 md:px-[5%] relative overflow-hidden text-[#064E3B]">
       <div className="max-w-[1200px] mx-auto relative z-10">
-        
+
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-16 md:mb-24">
           <motion.div
@@ -68,11 +68,11 @@ export default function TestimonialSection() {
               className="bg-white rounded-xl p-8 shadow-sm border border-gray-200 flex flex-col relative group hover:-translate-y-1 hover:shadow-md transition-all duration-300"
             >
               <StarRating />
-              
+
               <p className="text-gray-600 text-lg leading-relaxed mb-10 flex-grow relative z-10 font-medium">
                 "{testimonial.quote}"
               </p>
-              
+
               <div className="flex items-center gap-4 mt-auto pt-6 border-t border-gray-100">
                 <div className="w-12 h-12 rounded-full bg-[#16A34A]/10 flex items-center justify-center text-[#16A34A] font-bold text-xl border border-[#16A34A]/20">
                   {testimonial.name.charAt(0)}
