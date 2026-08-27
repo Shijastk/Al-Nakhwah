@@ -8,7 +8,7 @@ export default function Footer() {
 
           {/* Brand Column */}
           <div className="lg:col-span-1">
-            <h3 className="text-3xl font-black tracking-tight mb-4 text-white">Al Nakhwah.L.L.C<span className="text-[#16A34A]">.</span></h3>
+            <h3 className="text-3xl font-black tracking-tight mb-4 text-white">Al Nakhwah.L.L.C<span className="text-[#16A34A]"></span></h3>
             <p className="text-gray-400 text-sm leading-relaxed mb-6">
               Global sourcing, local expertise. Your premier wholesale partner for high-quality foodstuff, delivered on time.
             </p>

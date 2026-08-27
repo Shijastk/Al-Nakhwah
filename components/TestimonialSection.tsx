@@ -10,7 +10,7 @@ const testimonials = [
     role: "Executive Chef, The Grand Hotel",
   },
   {
-    quote: "Finding a supplier who can handle our massive bulk orders without compromising on quality was a challenge until we partnered with Al Nakhwah.L.L.C. Truly exceptional service.",
+    quote: "Finding a supplier who can handle our massive bulk orders without compromising on quality was a challenge until we partnered with Al Nakhwah.L.L.C Truly exceptional service.",
     name: "Sarah Jenkins",
     role: "Purchasing Director, Global Foods Ltd.",
   },
