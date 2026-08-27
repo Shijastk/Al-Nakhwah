@@ -3,8 +3,9 @@
 import React from "react";
 import { motion, useScroll, useTransform } from "framer-motion";
 import imgShipping from "../assets/shipping_logistics.jpg";
-import imgVegetables from "../assets/fresh_vegetables.jpg";
 import Button from "./Button";
+
+const GROCERY_PRODUCT_IMG = "https://i.pinimg.com/1200x/6c/a8/f0/6ca8f02f56d48f0daf38063da995e763.jpg";
 
 export default function AboutSection() {
   const { scrollYProgress } = useScroll();
@@ -19,7 +20,7 @@ export default function AboutSection() {
           style={{ y: yBg }}
           className="text-[120px] sm:text-[180px] md:text-[250px] font-extrabold tracking-tighter whitespace-nowrap"
         >
-          Al Nakhwah
+          ALNKWAH
         </motion.h2>
       </div>
 
@@ -27,10 +28,10 @@ export default function AboutSection() {
         
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-16 lg:gap-12 items-center">
           
-          {/* Left Side: Asymmetric Image Collage (Spans 6 columns) */}
-          <div className="lg:col-span-6 relative h-[500px] md:h-[650px] w-full flex items-center justify-center">
+          {/* Left Side: Asymmetric Image Collage */}
+          <div className="lg:col-span-6 relative h-[520px] md:h-[660px] w-full flex items-center justify-center">
             
-            {/* Primary Tall Image */}
+            {/* Primary Tall Image — Logistics */}
             <motion.div 
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -45,23 +46,26 @@ export default function AboutSection() {
               <div className="absolute inset-0 bg-black/10"></div>
             </motion.div>
 
-            {/* Secondary Overlapping Image */}
+            {/* Secondary Overlapping Card — Grocery Products (no crop) */}
             <motion.div 
               initial={{ opacity: 0, x: 30 }}
               whileInView={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.8, delay: 0.3, ease: "easeOut" }}
               viewport={{ once: true }}
-              className="absolute right-0 bottom-0 w-[60%] h-[50%] rounded-3xl overflow-hidden shadow-[0_20px_50px_rgba(0,0,0,0.15)] border-8 border-white"
+              className="absolute right-0 bottom-0 w-[62%] rounded-3xl shadow-[0_20px_60px_rgba(0,0,0,0.13)] border-8 border-white bg-white overflow-hidden"
+              style={{ aspectRatio: "4/3" }}
             >
-              <div 
-                className="absolute inset-0 bg-cover bg-center hover:scale-105 transition-transform duration-700"
-                style={{ backgroundImage: `url(${imgVegetables.src})` }}
+              <img
+                src={GROCERY_PRODUCT_IMG}
+                alt="Premium bulk grocery products — grains, spices, packaged goods"
+                className="w-full h-full object-contain"
+                style={{ display: "block" }}
               />
             </motion.div>
 
           </div>
 
-          {/* Right Side: Editorial Text Content (Spans 6 columns) */}
+          {/* Right Side: Editorial Text Content */}
           <div className="lg:col-span-6 flex flex-col justify-center lg:pl-10 xl:pl-16">
             
             <motion.div
@@ -72,11 +76,11 @@ export default function AboutSection() {
             >
               <div className="inline-flex items-center gap-3 mb-6">
                 <span className="w-12 h-[2px] bg-[#16A34A]"></span>
-                <span className="text-[#16A34A] font-bold tracking-[0.2em] text-xs uppercase">About Our Company</span>
+                <span className="text-[#16A34A] font-bold tracking-[0.2em] text-xs uppercase">About Al Nakhwah</span>
               </div>
               
               <h2 className="text-4xl md:text-5xl lg:text-6xl font-light leading-[1.1] tracking-tight mb-8">
-                Redefining the <strong className="font-bold">Standard</strong> of Global Food Supply.
+                Your Trusted <strong className="font-bold">Import & Export</strong> Partner for Premium Foodstuff.
               </h2>
             </motion.div>
 
@@ -87,32 +91,31 @@ export default function AboutSection() {
               transition={{ duration: 0.6, delay: 0.2 }}
               className="relative mb-10"
             >
-              {/* Decorative Quote Mark */}
               <span className="absolute -top-6 -left-4 text-6xl text-gray-200 font-serif leading-none select-none z-0">"</span>
               <p className="text-gray-600 text-lg md:text-xl leading-relaxed relative z-10 italic font-light">
-                For over two decades, Al Nakhwah has bridged the gap between premium global producers and local markets. We believe that uncompromising quality and seamless logistics are the foundation of every successful kitchen.
+                For over two decades, Al Nakhwah has connected global producers with retailers, hotels, and distributors across the GCC — delivering bulk grains, premium spices, cooking oils, and packaged goods at scale.
               </p>
             </motion.div>
 
-            {/* Sleek Stats Grid */}
+            {/* Stats Grid */}
             <motion.div 
-              className="grid grid-cols-2 md:grid-cols-3 gap-8 py-8 border-y border-gray-100 mb-10"
+              className="grid grid-cols-3 gap-8 py-8 border-y border-gray-100 mb-10"
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.6, delay: 0.3 }}
             >
               <div>
-                <p className="text-4xl font-bold text-[#064E3B] mb-1">20<span className="text-[#16A34A]">+</span></p>
-                <p className="text-sm text-gray-500 font-medium uppercase tracking-wider">Years Active</p>
+                <p className="text-4xl font-bold text-[#064E3B] mb-1">25<span className="text-[#16A34A]">+</span></p>
+                <p className="text-sm text-gray-500 font-medium uppercase tracking-wider">Countries</p>
               </div>
               <div>
-                <p className="text-4xl font-bold text-[#064E3B] mb-1">50<span className="text-[#16A34A]">+</span></p>
-                <p className="text-sm text-gray-500 font-medium uppercase tracking-wider">Global Markets</p>
+                <p className="text-4xl font-bold text-[#064E3B] mb-1">5k<span className="text-[#16A34A]">+</span></p>
+                <p className="text-sm text-gray-500 font-medium uppercase tracking-wider">B2B Partners</p>
               </div>
-              <div className="col-span-2 md:col-span-1">
-                <p className="text-4xl font-bold text-[#064E3B] mb-1">10k<span className="text-[#16A34A]">+</span></p>
-                <p className="text-sm text-gray-500 font-medium uppercase tracking-wider">Partners</p>
+              <div>
+                <p className="text-4xl font-bold text-[#064E3B] mb-1">$50M<span className="text-[#16A34A]">+</span></p>
+                <p className="text-sm text-gray-500 font-medium uppercase tracking-wider">Annual Trade</p>
               </div>
             </motion.div>
 

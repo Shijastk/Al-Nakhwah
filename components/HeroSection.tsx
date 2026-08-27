@@ -2,38 +2,38 @@
 
 import React, { useRef, useState, useEffect } from 'react';
 import { motion, useScroll, useTransform, AnimatePresence } from 'framer-motion';
-import banner1 from '../assets/bannanr/banner1.jpg';
-import banner2 from '../assets/bannanr/banner2.jpg';
-import banner3 from '../assets/bannanr/banner3.jpg';
+import banner1 from '../assets/bannanr/hero1.png';
+import banner2 from '../assets/bannanr/hero2.png';
+import banner3 from '../assets/bannanr/hero3.png';
 import Button from './Button';
 
 const slides = [
   {
     image: banner3,
-    badge: "Fresh Food, Simplified 🍒",
-    line1Text: "Wholesale ",
-    line1Bold: "Food",
-    line2Bold: "Supply,",
-    line2Text: " Simplified",
-    description: "A private marketplace for fresh food suppliers and buyers to streamline ordering, invoicing, and payments."
+    badge: "Global Foodstuff Importer & Exporter 🌍",
+    line1Text: "Premium ",
+    line1Bold: "Grocery",
+    line2Bold: "Worldwide.",
+    line2Text: "",
+    description: "Premium foodstuff imported and exported at scale — grains, spices, oils, and packaged goods for the GCC and beyond."
   },
   {
     image: banner2,
-    badge: "Premium Ingredients 🌟",
-    line1Text: "Freshness ",
-    line1Bold: "in",
-    line2Bold: "Every",
-    line2Text: " Bite",
-    description: "Discover our wide selection of top-tier meat, seafood, and crisp vegetables. Hand-picked for the highest standards."
+    badge: "Trusted By 5,000+ Business Partners 🤝",
+    line1Text: "Your Wholesale ",
+    line1Bold: "Supply",
+    line2Bold: "Partner.",
+    line2Text: "",
+    description: "Bulk rice, spices, and grocery staples delivered consistently to commercial kitchens, supermarkets, and distributors worldwide."
   },
   {
     image: banner1,
-    badge: "Sustainable Sourcing 🌱",
-    line1Text: "Nature's ",
-    line1Bold: "Best,",
-    line2Bold: "Delivered",
-    line2Text: "",
-    description: "Experience the perfect balance of land and sea. We bring you the freshest ingredients sourced with care and dedication."
+    badge: "ISO · HACCP · Halal Certified ✓",
+    line1Text: "Quality ",
+    line1Bold: "You",
+    line2Bold: "Can Source",
+    line2Text: " At Scale.",
+    description: "ISO, HACCP, and Halal certified. Every product rigorously verified from source to delivery, across 25+ countries."
   }
 ];
 

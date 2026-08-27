@@ -10,35 +10,36 @@ import Rice from "../assets/alnakhwah_rice_1787401071718.jpg";
 
 const categories = [
   {
-    title: "Fruits & Vegetables",
-    description: "Sell produce by the punnet, bunch, bag, each, kg or tray quantity type. Produce picking slips in one click by...",
-    image: imgVegetables,
-  },
-  {
-    title: "Seafood Suppliers",
-    description: "Source fresh, quality seafood from top local and international suppliers.",
-    image: imgSeafood,
-  },
-  {
     title: "Breads Suppliers",
     description: "Artisan and wholesale bakery suppliers delivering fresh daily.",
-    image: imgBread,
-  },
-  {
-    title: "Grains & Rice",
-    description: "Premium wholesale grains and rice for all your culinary needs.",
-    image: imgGrains,
-  },
-  {
-    title: "Dairy & Farm Fresh",
-    description: "Farm-fresh milk, artisan cheeses, and high-quality eggs from trusted local producers.",
-    image: Rice, // Using placeholder until user uploads a real image
+    image: "  https://i.pinimg.com/736x/e1/fe/b4/e1feb42f72cc526b521cbb91bc77514a.jpg",
   },
   {
     title: "Beverages & Drinks",
     description: "A wide selection of cold-pressed juices, soft drinks, and premium roast coffees.",
-    image: fruites, // Using placeholder
-  }
+    image: "https://i.pinimg.com/736x/79/6c/34/796c34906c9111f02f41a319298a261b.jpg", // Using placeholder
+  },
+  {
+    title: "Seafood Suppliers",
+    description: "Source fresh, quality seafood from top local and international suppliers.",
+    image: "https://imgs.search.brave.com/DNvMUWANYn0axlsoBWcHWpN3sPRklOtU3zMuPKo0REk/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pLnBp/bmltZy5jb20vb3Jp/Z2luYWxzLzNmL2Nh/L2UxLzNmY2FlMWYw/NjQ3MWEyNDAzZDk2/MGMwMWUzN2RmODc0/LmpwZw",
+  },
+  
+  {
+    title: "Grains & Rice",
+    description: "Premium wholesale grains and rice for all your culinary needs.",
+    image: "https://imgs.search.brave.com/klPTRDGTfktgzLOjzFsUwXJ1Uqu23c7DaojM--trriE/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9zdGF0/aWMudmVjdGVlenku/Y29tL3N5c3RlbS9y/ZXNvdXJjZXMvdGh1/bWJuYWlscy8wNzAv/ODcxLzgzOC9zbWFs/bC9yaWNlLWdyYWlu/LWluLWJhc2tldHMt/YWdyaWN1bHR1cmUt/aGFydmVzdC1mcmVl/LXBob3RvLmpwZw",
+  },
+  {
+    title: "Dairy & Farm Fresh",
+    description: "Farm-fresh milk, artisan cheeses, and high-quality eggs from trusted local producers.",
+    image: "https://imgs.search.brave.com/gCb3Up0VVVzJcvRYzDRA8ZtWIps5oK-LMhA_5JDZEX0/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9wbmcu/cG5ndHJlZS5jb20v/dGh1bWJfYmFjay9m/aDI2MC9iYWNrZ3Jv/dW5kLzIwMjUwMzA3/L3BuZ3RyZWUtcnVz/dGljLWZhcm0tc3Rh/bGwtZnJlc2gtZGFp/cnktcHJvZHVjdHMt/bWlsay1jaGVlc2Ut/aW1hZ2VfMTcwNzg3/MzkuanBn", // Using placeholder until user uploads a real image
+  },
+  {
+    title: "Fruits & Vegetables",
+    description: "Sell produce by the punnet, bunch, bag, each, kg or tray quantity type. Produce picking slips in one click by...",
+    image: "https://imgs.search.brave.com/gjRPVfj30P1gZxz-KGLNb9CoAKTv7J0UmdUog9GqqM8/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9zdGF0/aWMudmVjdGVlenku/Y29tL3N5c3RlbS9y/ZXNvdXJjZXMvdGh1/bWJuYWlscy8wMjIv/OTk3LzQ5MC9zbWFs/bC9oZWFsdGh5LWZv/b2QtdmVnZXRhYmxl/cy1mcnVpdHMtcmVh/bGlzbS1jcmVhdGVk/LXdpdGgtYWktdG9v/bHMtcGhvdG8uanBn",
+  },
 ];
 
 export default function SuppliersSection() {
@@ -98,7 +99,7 @@ export default function SuppliersSection() {
       `}} />
       <div className="max-w-[1100px] mx-auto">
         <h2 className="text-3xl md:text-[40px] leading-tight font-normal tracking-tight text-white max-w-3xl mx-auto text-center mb-16">
-          Wholesale <strong className="font-bold text-[#16A34A]">Suppliers</strong> for Every <strong className="font-bold text-[#16A34A]">Food &<br/> Beverage</strong> Need
+          Our <strong className="font-bold text-[#16A34A]">Product</strong> Categories — <strong className="font-bold text-[#16A34A]">Bulk Import<br/> & Export</strong> Ready
         </h2>
 
         <div className="relative group/container">
@@ -131,7 +132,7 @@ export default function SuppliersSection() {
                   >
                     <div 
                       className="absolute inset-0 bg-cover bg-center bg-no-repeat transition-transform duration-1000 scale-100"
-                      style={{ backgroundImage: `url(${category.image.src})` }}
+                      style={{ backgroundImage: `url(${category.image})` }}
                     />
                     {/* Permanent dark overlays */}
                     <div className="absolute inset-0 bg-black/30"></div>
