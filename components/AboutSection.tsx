@@ -19,7 +19,7 @@ export default function AboutSection() {
         <motion.h2
           style={{ y: yBg }}
           className="text-[120px] sm:text-[180px] md:text-[250px] font-extrabold tracking-tighter whitespace-nowrap"
-        >Al Nakhwah.LLC
+        >Al Nakhwah.L.L.C
           ALNKWAH
         </motion.h2>
       </div>
@@ -90,7 +90,7 @@ export default function AboutSection() {
               viewport={{ once: true }}
               transition={{ duration: 0.6, delay: 0.2 }}
               className="relative mb-10"
-            >Al Nakhwah.LLC
+            >Al Nakhwah.L.L.C
               <span className="absolute -top-6 -left-4 text-6xl text-gray-200 font-serif leading-none select-none z-0">"</span>
               <p className="text-gray-600 text-lg md:text-xl leading-relaxed relative z-10 italic font-light">
                 For over two decades, Al Nakhwah has connected global producers with retailers, hotels, and distributors across the GCC — delivering bulk grains, premium spices, cooking oils, and packaged goods at scale.

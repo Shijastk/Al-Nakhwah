@@ -50,7 +50,7 @@ export default function LogisticsSection() {
             transition={{ duration: 0.6, delay: 0.2 }}
             className="text-gray-400 text-lg md:text-xl leading-relaxed font-light"
           >
-            Al Nakhwah.LLC handles the complexities of international food trade so you don't have to. We manage every step of the logistics chain, ensuring your orders arrive fresh and on time.
+            Al Nakhwah.L.L.C handles the complexities of international food trade so you don't have to. We manage every step of the logistics chain, ensuring your orders arrive fresh and on time.
           </motion.p>
         </div>
 

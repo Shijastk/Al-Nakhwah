@@ -34,7 +34,7 @@ export default function QualitySection() {
           </h2>
 
           <p className="text-gray-600 text-lg leading-relaxed font-light">
-            Every product that carries the Al Nakhwah.LLC name undergoes rigorous quality control — from source verification and lab testing to packaging inspection and cold chain monitoring.
+            Every product that carries the Al Nakhwah.L.L.C name undergoes rigorous quality control — from source verification and lab testing to packaging inspection and cold chain monitoring.
           </p>
         </motion.div>
 

@@ -8,7 +8,7 @@ export default function ContactSection() {
   return (
     <section id="contact" className="relative w-full text-white py-24 px-6 md:px-[5%] overflow-hidden">
       {/* Background Image with Blue Overlay */}
-      <div 
+      <div
         className="absolute inset-0 bg-cover bg-center z-0"
         style={{ backgroundImage: `url(${bgImg.src})` }}
       ></div>
@@ -16,7 +16,7 @@ export default function ContactSection() {
 
       <div className="max-w-[1200px] mx-auto relative z-10">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center">
-          
+
           {/* Left Side: Info */}
           <div className="flex flex-col">
             <h2 className="text-4xl md:text-5xl lg:text-[56px] font-light tracking-tight leading-tight mb-6">
@@ -25,7 +25,7 @@ export default function ContactSection() {
             <p className="text-lg md:text-xl text-white/90 mb-12 font-light leading-relaxed max-w-xl">
               Contact our sales team today to set up your account, request pricing, and explore our full product catalog.
             </p>
-            
+
             <div className="flex flex-col gap-6">
               <div className="flex flex-col">
                 <strong className="text-sm uppercase tracking-[0.2em] text-white/80 mb-2">Global Headquarters</strong>
@@ -33,7 +33,7 @@ export default function ContactSection() {
               </div>
               <div className="flex flex-col">
                 <strong className="text-sm uppercase tracking-[0.2em] text-white/80 mb-2">Dedicated Support</strong>
-                <span className="text-2xl md:text-3xl font-light tracking-tight">Call <strong className="font-bold">0097333075524</strong></span>
+                <span className="text-2xl md:text-3xl font-light tracking-tight">Call <strong className="font-bold">+973 3007 5524</strong></span>
               </div>
             </div>
           </div>
@@ -44,8 +44,8 @@ export default function ContactSection() {
               <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
                 <div className="flex flex-col gap-2">
                   <label htmlFor="companyName" className="font-bold text-sm">Company Name</label>
-                  <input 
-                    type="text" 
+                  <input
+                    type="text"
                     id="companyName"
                     required
                     className="w-full border border-gray-300 bg-gray-50 rounded px-4 py-3 focus:outline-none focus:border-[#16A34A] focus:bg-white transition-colors"
@@ -53,8 +53,8 @@ export default function ContactSection() {
                 </div>
                 <div className="flex flex-col gap-2">
                   <label htmlFor="emailAddress" className="font-bold text-sm">Email Address</label>
-                  <input 
-                    type="email" 
+                  <input
+                    type="email"
                     id="emailAddress"
                     required
                     className="w-full border border-gray-300 bg-gray-50 rounded px-4 py-3 focus:outline-none focus:border-[#16A34A] focus:bg-white transition-colors"
@@ -64,7 +64,7 @@ export default function ContactSection() {
 
               <div className="flex flex-col gap-2">
                 <label htmlFor="inquiryType" className="font-bold text-sm">Inquiry Type</label>
-                <select 
+                <select
                   id="inquiryType"
                   required
                   defaultValue=""
@@ -80,7 +80,7 @@ export default function ContactSection() {
 
               <div className="flex flex-col gap-2">
                 <label htmlFor="messageBody" className="font-bold text-sm">Message</label>
-                <textarea 
+                <textarea
                   id="messageBody"
                   required
                   rows={4}

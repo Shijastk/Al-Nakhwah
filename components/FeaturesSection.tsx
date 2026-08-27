@@ -36,11 +36,11 @@ export default function FeaturesSection() {
           <div className="flex flex-col gap-8 pr-0 lg:pr-10">
             <div>
               <h2 className="text-4xl md:text-5xl font-normal leading-tight mb-6 tracking-tight whitespace-nowrap">
-                Why Al Nakhwah.LLC? The <strong className="font-bold">Ultimate</strong><br />
+                Why Al Nakhwah.L.L.C? The <strong className="font-bold">Ultimate</strong><br />
                 <strong className="font-bold">Wholesale</strong> Partner
               </h2>
               <p className="text-gray-600 text-lg leading-relaxed max-w-xl">
-                We are not just a supplier; we are an extension of your business. Al Nakhwah.LLC is built to handle the rigorous demands of the global fresh food industry.
+                We are not just a supplier; we are an extension of your business. Al Nakhwah.L.L.C is built to handle the rigorous demands of the global fresh food industry.
               </p>
             </div>
 

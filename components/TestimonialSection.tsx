@@ -5,12 +5,12 @@ import { motion } from "framer-motion";
 
 const testimonials = [
   {
-    quote: "Al Nakhwah.LLC has completely transformed our supply chain. Their cold-chain logistics ensure our seafood arrives in immaculate condition every single time.",
+    quote: "Al Nakhwah.L.L.C has completely transformed our supply chain. Their cold-chain logistics ensure our seafood arrives in immaculate condition every single time.",
     name: "Chef Marcus Lin",
     role: "Executive Chef, The Grand Hotel",
   },
   {
-    quote: "Finding a supplier who can handle our massive bulk orders without compromising on quality was a challenge until we partnered with Al Nakhwah.LLC. Truly exceptional service.",
+    quote: "Finding a supplier who can handle our massive bulk orders without compromising on quality was a challenge until we partnered with Al Nakhwah.L.L.C. Truly exceptional service.",
     name: "Sarah Jenkins",
     role: "Purchasing Director, Global Foods Ltd.",
   },

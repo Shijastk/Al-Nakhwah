@@ -49,8 +49,8 @@ export default function Navbar() {
       <div className="flex items-center justify-between px-6 md:px-[5%] h-full">
         <div className="flex items-center">
           <Link href="/" className="flex items-center gap-4">
-            <img src="/logo.png" alt="Al Nakhwah.LLC Logo" className="h-20 sm:h-24 w-auto object-contain" />
-            <span className="font-extrabold text-2xl sm:text-3xl tracking-tight uppercase">Al Nakhwah.LLC</span>
+            <img src="/logo.png" alt="Al Nakhwah.L.L.C Logo" className="h-20 sm:h-24 w-auto object-contain" />
+            <span className="font-extrabold text-2xl sm:text-3xl tracking-tight uppercase">Al Nakhwah.L.L.C</span>
           </Link>
         </div>
 
