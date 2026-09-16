@@ -52,7 +52,7 @@ export default function QualitySection() {
               <div className="w-24 h-24 md:w-32 md:h-32 mb-6 relative rounded-full overflow-hidden shadow-md border border-white bg-white flex items-center justify-center transform hover:scale-105 transition-transform duration-300">
                 <img src={cert.img} alt={cert.name} className="w-[85%] h-[85%] object-contain" />
               </div>
-              <h4 className="font-bold text-[#064E3B] text-lg mb-2">{cert.name}</h4>
+              <h3 className="font-bold text-[#064E3B] text-lg mb-2">{cert.name}</h3>
               <p className="text-gray-500 text-sm leading-relaxed font-light">
                 {cert.desc}
               </p>
