@@ -78,7 +78,7 @@ export default function TestimonialSection() {
                   {testimonial.name.charAt(0)}
                 </div>
                 <div>
-                  <h4 className="font-bold text-[#064E3B] text-base">{testimonial.name}</h4>
+                  <h3 className="font-bold text-[#064E3B] text-base">{testimonial.name}</h3>
                   <p className="text-sm text-gray-500 mt-0.5">{testimonial.role}</p>
                 </div>
               </div>
