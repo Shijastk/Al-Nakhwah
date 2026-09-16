@@ -20,7 +20,7 @@ const CloseIcon = () => (
 );
 
 const navLinks = [
-  { label: "Home", href: "#" },
+  { label: "Home", href: "/" },
   { label: "About", href: "#about" },
   { label: "Products", href: "#products" },
   { label: "Quality", href: "#quality" },
@@ -44,6 +44,28 @@ export default function Navbar() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
+  const handleNavClick = (
+    event: React.MouseEvent<HTMLAnchorElement>,
+    href: string,
+    closeMenu = false,
+  ) => {
+    if (closeMenu) {
+      setIsOpen(false);
+    }
+
+    if (href === "/") {
+      event.preventDefault();
+      window.scrollTo({ top: 0, behavior: "smooth" });
+      return;
+    }
+
+    const target = document.querySelector(href);
+    if (target) {
+      event.preventDefault();
+      target.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
   return (
     <nav className={`fixed top-0 left-0 w-full z-[100] transition-all duration-300 ${isScrolled ? "bg-white text-[#064E3B] shadow-sm border-b border-gray-100 py-2" : "bg-transparent text-white border-b border-transparent py-4"}`}>
       <div className="flex items-center justify-between px-6 md:px-[5%] h-full">
@@ -57,20 +79,14 @@ export default function Navbar() {
         {/* Desktop Navigation */}
         <div className="hidden lg:flex gap-8 text-[15px] font-medium items-center ml-auto mr-8">
           {navLinks.map((link) => (
-            <button
+            <a
               key={link.label}
-              onClick={(e) => {
-                e.preventDefault();
-                if (link.href === "#") {
-                  window.scrollTo({ top: 0, behavior: "smooth" });
-                } else {
-                  document.querySelector(link.href)?.scrollIntoView({ behavior: 'smooth' });
-                }
-              }}
+              href={link.href}
+              onClick={(event) => handleNavClick(event, link.href)}
               className="hover:opacity-80 transition-opacity whitespace-nowrap cursor-pointer"
             >
               {link.label}
-            </button>
+            </a>
           ))}
         </div>
 
@@ -97,21 +113,14 @@ export default function Navbar() {
         <div className="lg:hidden absolute top-full left-0 w-full bg-white border-b border-gray-100 flex flex-col p-6 shadow-2xl">
           <div className="flex flex-col gap-6 text-[16px] font-medium text-[#064E3B]">
             {navLinks.map((link) => (
-              <button
+              <a
                 key={link.label}
-                onClick={(e) => {
-                  e.preventDefault();
-                  setIsOpen(false);
-                  if (link.href === "#") {
-                    window.scrollTo({ top: 0, behavior: "smooth" });
-                  } else {
-                    document.querySelector(link.href)?.scrollIntoView({ behavior: 'smooth' });
-                  }
-                }}
+                href={link.href}
+                onClick={(event) => handleNavClick(event, link.href, true)}
                 className="hover:opacity-80 transition-opacity text-left cursor-pointer"
               >
                 {link.label}
-              </button>
+              </a>
             ))}
 
             <div className="w-full h-[1px] bg-gray-100 my-2"></div>
