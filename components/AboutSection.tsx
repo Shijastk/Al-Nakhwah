@@ -16,12 +16,13 @@ export default function AboutSection() {
 
       {/* Massive Background Text Watermark */}
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full overflow-hidden pointer-events-none select-none flex justify-center z-0 opacity-[0.03]">
-        <motion.h2
+        <motion.div
+          aria-hidden="true"
           style={{ y: yBg }}
           className="text-[120px] sm:text-[180px] md:text-[250px] font-extrabold tracking-tighter whitespace-nowrap"
         >Al Nakhwah.L.L.C
           ALNKWAH
-        </motion.h2>
+        </motion.div>
       </div>
 
       <div className="max-w-[1300px] mx-auto relative z-10">
