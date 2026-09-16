@@ -25,9 +25,9 @@ export default function TrustedBrandsSection() {
   return (
     <section className="w-full bg-[#F8FAFC] py-12 md:py-16 border-y border-gray-100 overflow-hidden">
       <div className="max-w-[1400px] mx-auto px-6 md:px-[5%] mb-8 text-center">
-        <h3 className="text-gray-400 text-xs md:text-sm font-bold tracking-[0.2em] uppercase">
+        <h2 className="text-gray-400 text-xs md:text-sm font-bold tracking-[0.2em] uppercase">
           Trusted By Industry Leaders
-        </h3>
+        </h2>
       </div>
       
       <div className="relative flex overflow-hidden w-full group">
