@@ -86,7 +86,7 @@ export default function FeaturesSection() {
                   </svg>
                 </div>
                 <div>
-                  <h4 className="font-bold text-lg mb-2">Global Sourcing Network</h4>
+                  <h3 className="font-bold text-lg mb-2">Global Sourcing Network</h3>
                   <p className="text-gray-500 text-sm leading-relaxed">
                     Direct partnerships with top-tier farms and producers ensure you receive the finest ingredients year-round.
                   </p>
@@ -104,7 +104,7 @@ export default function FeaturesSection() {
                   </svg>
                 </div>
                 <div>
-                  <h4 className="font-bold text-lg mb-2">Cold-Chain Logistics</h4>
+                  <h3 className="font-bold text-lg mb-2">Cold-Chain Logistics</h3>
                   <p className="text-gray-500 text-sm leading-relaxed">
                     State-of-the-art temperature-controlled shipping guarantees maximum freshness from origin to your door.
                   </p>
@@ -122,7 +122,7 @@ export default function FeaturesSection() {
                   </svg>
                 </div>
                 <div>
-                  <h4 className="font-bold text-lg mb-2">Dedicated Support</h4>
+                  <h3 className="font-bold text-lg mb-2">Dedicated Support</h3>
                   <p className="text-gray-500 text-sm leading-relaxed">
                     Personalized account management ensuring your bulk orders are handled flawlessly, 24/7.
                   </p>
