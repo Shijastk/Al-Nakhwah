@@ -76,7 +76,7 @@ export default function Navbar() {
               alt="Al Nakhwah.L.L.C Logo"
               className="w-[clamp(50px,15vw,72px)] h-auto shrink-0 object-contain lg:w-auto lg:h-24"
             />
-            <span className="font-extrabold text-[clamp(14px,4.5vw,21px)] sm:text-2xl lg:text-3xl tracking-tight uppercase whitespace-nowrap leading-none">
+            <span className="font-extrabold text-[clamp(17px,5.5vw,26px)] sm:text-2xl lg:text-3xl tracking-tight uppercase whitespace-nowrap leading-none">
               Al Nakhwah.L.L.C
             </span>
           </Link>
