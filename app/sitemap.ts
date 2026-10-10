@@ -3,12 +3,7 @@ import type { MetadataRoute } from "next";
 const siteUrl = "https://alnakhwahfoodstuff.com";
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  return [
-    {
-      url: siteUrl,
-      lastModified: new Date(),
-      changeFrequency: "monthly",
-      priority: 1,
-    },
-  ];
+  // Only list canonical, publicly accessible pages.
+  // Do not invent a lastModified timestamp on every request.
+  return [{ url: siteUrl }];
 }
