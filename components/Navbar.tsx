@@ -68,11 +68,14 @@ export default function Navbar() {
 
   return (
     <nav className={`fixed top-0 left-0 w-full z-[100] transition-all duration-300 ${isScrolled ? "bg-white text-[#064E3B] shadow-sm border-b border-gray-100 py-2" : "bg-transparent text-white border-b border-transparent py-4"}`}>
-      <div className="flex items-center justify-between gap-2 px-3 sm:px-6 md:px-[5%] h-full min-w-0">
-        <div className="flex items-center min-w-0 flex-1 lg:flex-none">
-          <Link href="/" className="flex items-center gap-2 sm:gap-4 min-w-0 max-w-full">
-            <img src="/logo.png" alt="Al Nakhwah.L.L.C Logo" className="h-12 w-12 min-[390px]:h-14 min-[390px]:w-14 sm:h-20 sm:w-auto lg:h-24 shrink-0 object-contain" />
-            <span className="font-extrabold text-[clamp(0.82rem,3.55vw,1.5rem)] sm:text-3xl tracking-tight uppercase min-w-0 break-words leading-tight lg:whitespace-nowrap">Al Nakhwah.L.L.C</span>
+      <div className="grid grid-cols-[minmax(0,1fr)_40px] lg:flex lg:items-center lg:justify-between items-center gap-2 px-3 sm:px-6 md:px-[5%] w-full min-w-0">
+        <div className="min-w-0">
+          <Link href="/" className="grid grid-cols-[56px_minmax(0,1fr)] min-[390px]:grid-cols-[64px_minmax(0,1fr)] lg:flex lg:items-center gap-2 sm:gap-4 min-w-0 max-w-full">
+            <img src="/logo.png" alt="Al Nakhwah.L.L.C Logo" className="w-14 h-14 min-[390px]:w-16 min-[390px]:h-16 lg:w-auto lg:h-24 shrink-0 object-contain" />
+            <span className="min-w-0 font-extrabold text-[clamp(13px,3.5vw,18px)] lg:text-3xl tracking-tight uppercase leading-tight">
+              <span className="block lg:inline">Al</span>
+              <span className="block lg:inline lg:before:content-['\\00a0'] text-[clamp(12px,3.1vw,17px)] lg:text-inherit break-all lg:break-normal">Nakhwah.L.L.C</span>
+            </span>
           </Link>
         </div>
 
@@ -100,7 +103,7 @@ export default function Navbar() {
 
         {/* Mobile Menu Button */}
         <button
-          className={`lg:hidden shrink-0 flex items-center justify-center p-2 transition-colors ${isScrolled ? "text-[#064E3B]" : "text-white"}`}
+          className={`lg:hidden w-10 h-10 shrink-0 flex items-center justify-center p-2 transition-colors ${isScrolled ? "text-[#064E3B]" : "text-white"}`}
           onClick={() => setIsOpen(!isOpen)}
           aria-label={isOpen ? "Close menu" : "Open menu"}
           aria-expanded={isOpen}
