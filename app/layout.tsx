@@ -90,6 +90,18 @@ const organizationStructuredData = {
   },
 };
 
+const websiteStructuredData = {
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "@id": `${siteUrl}/#website`,
+  url: siteUrl,
+  name: "Al Nakhwah.L.L.C",
+  description:
+    "Bahrain-based foodstuff wholesale trading, import and export for businesses.",
+  inLanguage: "en",
+  publisher: { "@type": "Organization", name: "Al Nakhwah.L.L.C", url: siteUrl },
+};
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -102,6 +114,12 @@ export default function RootLayout({
           type="application/ld+json"
           dangerouslySetInnerHTML={{
             __html: JSON.stringify(organizationStructuredData),
+          }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(websiteStructuredData),
           }}
         />
         {children}
