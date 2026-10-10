@@ -74,7 +74,8 @@ export default function Navbar() {
             <img src="/logo.png" alt="Al Nakhwah.L.L.C Logo" className="w-14 h-14 min-[390px]:w-16 min-[390px]:h-16 lg:w-auto lg:h-24 shrink-0 object-contain" />
             <span className="min-w-0 font-extrabold text-[clamp(13px,3.5vw,18px)] lg:text-3xl tracking-tight uppercase leading-tight">
               <span className="block lg:inline">Al</span>
-              <span className="block lg:inline lg:before:content-['\\00a0'] text-[clamp(12px,3.1vw,17px)] lg:text-inherit break-all lg:break-normal">Nakhwah.L.L.C</span>
+              <span className="hidden lg:inline">{" "}</span>
+              <span className="block lg:inline text-[clamp(12px,3.1vw,17px)] lg:text-inherit break-all lg:break-normal">Nakhwah.L.L.C</span>
             </span>
           </Link>
         </div>
