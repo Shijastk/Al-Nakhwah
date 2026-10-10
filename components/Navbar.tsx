@@ -68,11 +68,11 @@ export default function Navbar() {
 
   return (
     <nav className={`fixed top-0 left-0 w-full z-[100] transition-all duration-300 ${isScrolled ? "bg-white text-[#064E3B] shadow-sm border-b border-gray-100 py-2" : "bg-transparent text-white border-b border-transparent py-4"}`}>
-      <div className="flex items-center justify-between px-6 md:px-[5%] h-full">
-        <div className="flex items-center">
-          <Link href="/" className="flex items-center gap-4">
-            <img src="/logo.png" alt="Al Nakhwah.L.L.C Logo" className="h-20 sm:h-24 w-auto object-contain" />
-            <span className="font-extrabold text-2xl sm:text-3xl tracking-tight uppercase">Al Nakhwah.L.L.C</span>
+      <div className="flex items-center justify-between gap-2 px-3 sm:px-6 md:px-[5%] h-full min-w-0">
+        <div className="flex items-center min-w-0 flex-1 lg:flex-none">
+          <Link href="/" className="flex items-center gap-2 sm:gap-4 min-w-0 max-w-full">
+            <img src="/logo.png" alt="Al Nakhwah.L.L.C Logo" className="h-12 w-12 min-[390px]:h-14 min-[390px]:w-14 sm:h-20 sm:w-auto lg:h-24 shrink-0 object-contain" />
+            <span className="font-extrabold text-[clamp(0.82rem,3.55vw,1.5rem)] sm:text-3xl tracking-tight uppercase min-w-0 break-words leading-tight lg:whitespace-nowrap">Al Nakhwah.L.L.C</span>
           </Link>
         </div>
 
@@ -100,9 +100,11 @@ export default function Navbar() {
 
         {/* Mobile Menu Button */}
         <button
-          className={`lg:hidden flex items-center justify-center p-2 transition-colors ${isScrolled ? "text-[#064E3B]" : "text-white"}`}
+          className={`lg:hidden shrink-0 flex items-center justify-center p-2 transition-colors ${isScrolled ? "text-[#064E3B]" : "text-white"}`}
           onClick={() => setIsOpen(!isOpen)}
-          aria-label="Toggle Menu"
+          aria-label={isOpen ? "Close menu" : "Open menu"}
+          aria-expanded={isOpen}
+          aria-controls="mobile-navigation"
         >
           {isOpen ? <CloseIcon /> : <MenuIcon />}
         </button>
@@ -110,7 +112,7 @@ export default function Navbar() {
 
       {/* Mobile Menu Dropdown */}
       {isOpen && (
-        <div className="lg:hidden absolute top-full left-0 w-full bg-white border-b border-gray-100 flex flex-col p-6 shadow-2xl">
+        <div id="mobile-navigation" className="lg:hidden absolute top-full left-0 w-full bg-white border-b border-gray-100 flex flex-col p-6 shadow-2xl">
           <div className="flex flex-col gap-6 text-[16px] font-medium text-[#064E3B]">
             {navLinks.map((link) => (
               <a
